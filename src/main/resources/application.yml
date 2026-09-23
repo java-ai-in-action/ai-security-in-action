@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ai-security-demo
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+# ---- 安全策略（生产建议放配置中心，便于热更新）----
+security:
+  input:
+    max-length: 2000          # 单条输入最大长度
+    rate-limit-per-minute: 20 # 单用户每分钟调用上限（配合 Resilience4j / Sentinel）
+  output:
+    audit-enabled: true       # 是否开启输出审计
