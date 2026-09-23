@@ -124,3 +124,17 @@ return request.mutate().prompt(wrapped).build();
 MIT
 
 > 版本说明：本仓库基于 Spring AI 1.0 GA 编写，Advisor API（`BaseAdvisor` / `SafeGuardAdvisor`）已对照官方源码核对。
+
+---
+
+## 📮 关注公众号「Java程序员面试宝典」
+
+<img src="docs/wechat-qrcode.png" width="720" alt="扫码关注公众号：Java程序员面试宝典" />
+
+**微信搜一搜「Java程序员面试宝典」**，或直接扫码关注。
+
+- 📖 **「Java AI 实战派」系列 10 篇长文** —— 公众号首发，不定时更新
+- 🧰 每篇都配**可运行的开源仓库**（这套系列一共 8 个仓库）
+- 🕳️ 只讲**踩过的坑**，不讲空概念
+
+> 这个仓库帮到你了吗？点个 ⭐ **Star** 支持一下，再去公众号坐坐 👆
